@@ -44,7 +44,7 @@
 
     <!-- Announcements -->
     <div class="bg-gold text-coffeeDark text-center py-2 font-bold text-sm z-[60] relative">
-        <span class="animate-pulse">🌟 أهلاً بكم في وينتوب كوفي - خصم للطلبات التجارية وطلبات الجملة 🌟</span>
+        <span class="animate-pulse" data-i18n="announcement">🌟 أهلاً بكم في وينتوب كوفي - خصم للطلبات التجارية وطلبات الجملة 🌟</span>
     </div>
 
     <!-- Navigation -->
@@ -58,23 +58,30 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="text-2xl font-heading font-black text-gold tracking-wider">WINTOP <span class="text-white">COFFEE</span></span>
-                        <span class="text-xs text-gray-400 font-medium">قهوة مختصة ومعدات</span>
+                        <span class="text-xs text-gray-400 font-medium" data-i18n="tagline">قهوة مختصة ومعدات</span>
                     </div>
                 </div>
 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8 space-x-reverse font-bold text-gray-300">
-                    <a href="#home" class="hover:text-gold transition-colors duration-300">الرئيسية</a>
-                    <a href="#flavors" class="hover:text-gold transition-colors duration-300">نكهاتنا</a>
-                    <a href="#packaging" class="hover:text-gold transition-colors duration-300">تغليفنا</a>
-                    <a href="#order" class="hover:text-gold transition-colors duration-300">اطلب الآن</a>
+                <div class="hidden lg:flex space-x-8 space-x-reverse font-bold text-gray-300">
+                    <a href="#home" class="hover:text-gold transition-colors duration-300" data-i18n="nav_home">الرئيسية</a>
+                    <a href="#flavors" class="hover:text-gold transition-colors duration-300" data-i18n="nav_flavors">نكهاتنا</a>
+                    <a href="#packaging" class="hover:text-gold transition-colors duration-300" data-i18n="nav_packaging">تغليفنا</a>
+                    <a href="#order" class="hover:text-gold transition-colors duration-300" data-i18n="nav_order">اطلب الآن</a>
                 </div>
 
-                <!-- Call to Action -->
-                <div class="flex items-center gap-4">
-                    <a href="#order" class="bg-green-600 text-white px-5 py-2.5 rounded-lg font-bold hover:bg-green-500 transition-all hover-lift flex items-center gap-2 shadow-lg shadow-green-900/50">
+                <!-- Actions & Language Switcher -->
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <!-- Language Switcher -->
+                    <div class="flex items-center bg-coffeeMedium/50 rounded-lg p-1 border border-gold/30">
+                        <button onclick="switchLanguage('ar')" class="px-2 py-1 text-xs font-bold rounded hover:bg-gold hover:text-coffeeDark transition" title="العربية">AR</button>
+                        <button onclick="switchLanguage('en')" class="px-2 py-1 text-xs font-bold rounded hover:bg-gold hover:text-coffeeDark transition" title="English">EN</button>
+                        <button onclick="switchLanguage('fr')" class="px-2 py-1 text-xs font-bold rounded hover:bg-gold hover:text-coffeeDark transition" title="Français">FR</button>
+                    </div>
+
+                    <a href="#order" class="bg-green-600 text-white px-3 sm:px-5 py-2 rounded-lg font-bold hover:bg-green-500 transition-all hover-lift flex items-center gap-2 shadow-lg shadow-green-900/50">
                         <i class="fa-brands fa-whatsapp text-xl"></i>
-                        <span class="hidden sm:inline">الطلب والاستفسار</span>
+                        <span class="hidden md:inline" data-i18n="order_btn">الطلب والاستفسار</span>
                     </a>
                 </div>
             </div>
@@ -88,19 +95,19 @@
             <!-- Hero Content -->
             <div class="lg:w-1/2 text-center lg:text-right reveal">
                 <div class="inline-block bg-coffeeMedium/50 border border-gold/50 text-gold font-bold px-4 py-2 rounded-full mb-8 text-sm backdrop-blur-sm">
-                    <i class="fa-solid fa-mug-hot me-2"></i> المذاق الذي يوقظ حواسك
+                    <i class="fa-solid fa-mug-hot me-2"></i> <span data-i18n="hero_badge">المذاق الذي يوقظ حواسك</span>
                 </div>
                 <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-black mb-8 leading-tight">
-                    أجود حبوب <br> القهوة <span class="text-gold">والمعدات</span>
+                    <span data-i18n="hero_title_1">أجود حبوب</span> <br> <span data-i18n="hero_title_2">القهوة</span> <span class="text-gold" data-i18n="hero_title_3">والمعدات</span>
                 </h1>
-                <p class="text-gray-300 text-lg mb-12 max-w-lg mx-auto lg:mx-0 font-medium leading-relaxed">
+                <p class="text-gray-300 text-lg mb-12 max-w-lg mx-auto lg:mx-0 font-medium leading-relaxed" data-i18n="hero_desc">
                     نستورد، نحمص، ونعبئ أجود أنواع البن لنضمن لك كوب قهوة مثالي. كما نوفر أحدث آلات الإسبريسو ومطاحن القهوة للمقاهي والمنازل.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-                    <a href="#order" class="bg-gold text-coffeeDark px-10 py-4 rounded-xl font-heading font-bold text-lg hover:bg-yellow-500 transition shadow-xl shadow-gold/20 flex items-center justify-center gap-2 hover-lift">
+                    <a href="#order" class="bg-gold text-coffeeDark px-10 py-4 rounded-xl font-heading font-bold text-lg hover:bg-yellow-500 transition shadow-xl shadow-gold/20 flex items-center justify-center gap-2 hover-lift" data-i18n="hero_cta_order">
                         <i class="fa-solid fa-bag-shopping"></i> اطلب الآن
                     </a>
-                    <a href="#packaging" class="bg-transparent border-2 border-gray-500 text-gray-300 px-10 py-4 rounded-xl font-heading font-bold text-lg hover:border-gold hover:text-gold transition flex items-center justify-center gap-2">
+                    <a href="#packaging" class="bg-transparent border-2 border-gray-500 text-gray-300 px-10 py-4 rounded-xl font-heading font-bold text-lg hover:border-gold hover:text-gold transition flex items-center justify-center gap-2" data-i18n="hero_cta_products">
                         منتجاتنا
                     </a>
                 </div>
@@ -123,8 +130,10 @@
 
                 <!-- Floating Decorative Icons -->
                 <i class="fa-solid fa-seedling text-gold text-4xl absolute top-10 right-0 floating-bean opacity-80" style="animation-delay: 0s;"></i>
-                <i class="fa-solid fa-seedling text-coffeeMedium text-5xl absolute bottom-0 left-0 floating-bean opacity-90" style="animation-delay: 1.5s;"></i>
-                <i class="fa-solid fa-leaf text-gold text-2xl absolute top-1/2 -left-10 floating-bean opacity-60" style="animation-delay: 3s;"></i>
+                <i class="fa-solid fa-seedling text-coffeeMedium text-5xl absolute bottom-0 left-0 floating-bean-slow opacity-90" style="animation-delay: 1.5s;"></i>
+                <i class="fa-solid fa-leaf text-gold text-2xl absolute top-1/2 -left-10 floating-bean-fast opacity-60" style="animation-delay: 3s;"></i>
+                <i class="fa-solid fa-mug-hot text-white/10 text-9xl absolute -bottom-20 -right-20 floating-bean-slow"></i>
+                <i class="fa-solid fa-seedling text-gold/20 text-7xl absolute -top-20 -left-10 floating-bean"></i>
             </div>
         </div>
     </section>
@@ -133,8 +142,8 @@
     <section id="flavors" class="py-24 bg-latte relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 reveal">
-                <h2 class="text-4xl md:text-5xl font-heading font-black text-coffeeDark mb-6">اكتشف درجات التحميص</h2>
-                <p class="text-coffeeMedium font-medium max-w-2xl mx-auto text-lg leading-relaxed">لكل ذائقة درجة تحميص تناسبها، نحن نحمص القهوة بعناية لاستخراج أعمق الإيحاءات العطرية والخصائص الفريدة لكل نوع.</p>
+                <h2 class="text-4xl md:text-5xl font-heading font-black text-coffeeDark mb-6" data-i18n="flavors_title">اكتشف درجات التحميص</h2>
+                <p class="text-coffeeMedium font-medium max-w-2xl mx-auto text-lg leading-relaxed" data-i18n="flavors_desc">لكل ذائقة درجة تحميص تناسبها، نحن نحمص القهوة بعناية لاستخراج أعمق الإيحاءات العطرية والخصائص الفريدة لكل نوع.</p>
                 <div class="w-32 h-1.5 bg-gold mx-auto mt-8 rounded-full"></div>
             </div>
 
@@ -145,9 +154,9 @@
                     <div class="w-24 h-24 mx-auto bg-amber-50 rounded-full flex items-center justify-center text-amber-600 text-4xl mb-8 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-sun"></i>
                     </div>
-                    <h3 class="text-2xl font-heading font-bold text-coffeeDark mb-4">تحميص فاتح (Light)</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">حموضة فاكهية واضحة، إيحاءات زهرية، وقوام خفيف. مثالية لقهوة الفلتر والتقطير V60 والقهوة السوداء.</p>
-                    <span class="inline-block text-amber-700 font-bold bg-amber-100 px-4 py-2 rounded-full text-sm">إيحاءات فاكهية وزهرية</span>
+                    <h3 class="text-2xl font-heading font-bold text-coffeeDark mb-4" data-i18n="roast_light_title">تحميص فاتح (Light)</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed" data-i18n="roast_light_desc">حموضة فاكهية واضحة، إيحاءات زهرية، وقوام خفيف. مثالية لقهوة الفلتر والتقطير V60 والقهوة السوداء.</p>
+                    <span class="inline-block text-amber-700 font-bold bg-amber-100 px-4 py-2 rounded-full text-sm" data-i18n="roast_light_notes">إيحاءات فاكهية وزهرية</span>
                 </div>
 
                 <!-- Medium Roast -->
@@ -156,9 +165,9 @@
                     <div class="w-24 h-24 mx-auto bg-gold/10 rounded-full flex items-center justify-center text-gold text-4xl mb-8 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-mug-saucer"></i>
                     </div>
-                    <h3 class="text-2xl font-heading font-bold text-coffeeDark mb-4">تحميص متوسط (Medium)</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">توازن مثالي بين الحموضة والمرارة، حلاوة واضحة وقوام ممتلئ. الخيار الأول للإسبريسو ومشروبات الحليب.</p>
-                    <span class="inline-block text-yellow-800 font-bold bg-yellow-100 px-4 py-2 rounded-full text-sm">إيحاءات كراميل وشوكولاتة</span>
+                    <h3 class="text-2xl font-heading font-bold text-coffeeDark mb-4" data-i18n="roast_medium_title">تحميص متوسط (Medium)</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed" data-i18n="roast_medium_desc">توازن مثالي بين الحموضة والمرارة، حلاوة واضحة وقوام ممتلئ. الخيار الأول للإسبريسو ومشروبات الحليب.</p>
+                    <span class="inline-block text-yellow-800 font-bold bg-yellow-100 px-4 py-2 rounded-full text-sm" data-i18n="roast_medium_notes">إيحاءات كراميل وشوكولاتة</span>
                 </div>
 
                 <!-- Dark Roast -->
@@ -166,9 +175,9 @@
                     <div class="w-24 h-24 mx-auto bg-coffeeDark rounded-full flex items-center justify-center text-white text-4xl mb-8 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-moon"></i>
                     </div>
-                    <h3 class="text-2xl font-heading font-bold text-coffeeDark mb-4">تحميص داكن (Dark)</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">مرارة محببة، غياب للحموضة، وقوام ثقيل جداً. ممتازة لعشاق القهوة الكلاسيكية والقهوة التركية الغنية.</p>
-                    <span class="inline-block text-coffeeDark font-bold bg-gray-100 px-4 py-2 rounded-full text-sm">إيحاءات كاكاو ومكسرات</span>
+                    <h3 class="text-2xl font-heading font-bold text-coffeeDark mb-4" data-i18n="roast_dark_title">تحميص داكن (Dark)</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed" data-i18n="roast_dark_desc">مرارة محببة، غياب للحموضة، وقوام ثقيل جداً. ممتازة لعشاق القهوة الكلاسيكية والقهوة التركية الغنية.</p>
+                    <span class="inline-block text-coffeeDark font-bold bg-gray-100 px-4 py-2 rounded-full text-sm" data-i18n="roast_dark_notes">إيحاءات كاكاو ومكسرات</span>
                 </div>
 
             </div>
@@ -181,8 +190,8 @@
             <div class="flex flex-col lg:flex-row items-center gap-20">
 
                 <div class="lg:w-1/2 reveal">
-                    <h2 class="text-4xl font-heading font-black text-coffeeDark mb-8 leading-tight">تغليف فاخر، <span class="text-gold">يحفظ النكهة</span></h2>
-                    <p class="text-gray-600 mb-10 leading-relaxed text-lg">
+                    <h2 class="text-4xl font-heading font-black text-coffeeDark mb-8 leading-tight"><span data-i18n="pkg_title_1">تغليف فاخر،</span> <span class="text-gold" data-i18n="pkg_title_2">يحفظ النكهة</span></h2>
+                    <p class="text-gray-600 mb-10 leading-relaxed text-lg" data-i18n="pkg_desc">
                         نولي في WINTOP اهتماماً بالغاً بأكياس التعبئة والتغليف. أكياسنا مصممة خصيصاً مع صمام تفريغ هواء أحادي الاتجاه للحفاظ على طزاجة الحبوب، وسحاب محكم الغلق لضمان بقاء الزيوت والنكهات العطرية لأطول فترة ممكنة.
                     </p>
                     <div class="space-y-6 mb-12">
@@ -190,22 +199,22 @@
                             <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 transition-colors group-hover:bg-green-600 group-hover:text-white">
                                 <i class="fa-solid fa-check"></i>
                             </div>
-                            <span class="text-coffeeDark font-bold text-lg">أكياس 250 جرام للاستخدام المنزلي</span>
+                            <span class="text-coffeeDark font-bold text-lg" data-i18n="pkg_item_1">أكياس 250 جرام للاستخدام المنزلي</span>
                         </div>
                         <div class="flex items-center gap-4 group">
                             <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 transition-colors group-hover:bg-green-600 group-hover:text-white">
                                 <i class="fa-solid fa-check"></i>
                             </div>
-                            <span class="text-coffeeDark font-bold text-lg">أكياس 1 كيلو للمقاهي والمطاعم</span>
+                            <span class="text-coffeeDark font-bold text-lg" data-i18n="pkg_item_2">أكياس 1 كيلو للمقاهي والمطاعم</span>
                         </div>
                         <div class="flex items-center gap-4 group">
                             <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 transition-colors group-hover:bg-green-600 group-hover:text-white">
                                 <i class="fa-solid fa-check"></i>
                             </div>
-                            <span class="text-coffeeDark font-bold text-lg">طحن مخصص (إسبريسو، فلتر، تركي)</span>
+                            <span class="text-coffeeDark font-bold text-lg" data-i18n="pkg_item_3">طحن مخصص (إسبريسو، فلتر، تركي)</span>
                         </div>
                     </div>
-                    <a href="#order" class="inline-block bg-coffeeDark text-white px-10 py-4 rounded-xl font-heading font-bold hover:bg-coffeeMedium transition shadow-xl hover-lift">
+                    <a href="#order" class="inline-block bg-coffeeDark text-white px-10 py-4 rounded-xl font-heading font-bold hover:bg-coffeeMedium transition shadow-xl hover-lift" data-i18n="pkg_cta">
                         اطلب قهوتك الآن
                     </a>
                 </div>
@@ -216,7 +225,7 @@
                         <div class="col-span-2 relative group overflow-hidden rounded-3xl shadow-xl">
                             <img src="assets/images/logo.jpg" alt="تغليف وينتوب كوفي" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute inset-0 bg-gradient-to-t from-coffeeDark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                                <p class="text-white font-bold">جودة لا تضاهى في كل غلاف</p>
+                                <p class="text-white font-bold" data-i18n="pkg_hover">جودة لا تضاهى في كل غلاف</p>
                             </div>
                         </div>
                         <!-- Secondary Images (Unsplash Placeholders) -->
@@ -238,6 +247,7 @@
         <!-- Decoration Background -->
         <i class="fa-solid fa-mug-hot absolute top-20 right-20 text-[15rem] text-coffeeMedium opacity-[0.03] transform rotate-12 floating-bean"></i>
         <i class="fa-solid fa-seedling absolute bottom-20 left-20 text-[15rem] text-gold opacity-[0.05] -rotate-12 floating-bean"></i>
+        <i class="fa-solid fa-seedling absolute top-1/2 left-0 text-[10rem] text-coffeeDark opacity-[0.05] floating-bean-fast"></i>
 
         <div class="max-w-4xl mx-auto px-4 relative z-10">
             <div class="bg-white rounded-[3rem] p-8 md:p-16 shadow-2xl border border-gold/20 reveal">
@@ -251,49 +261,49 @@
                 </div>
 
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-heading font-black text-coffeeDark mb-4">اطلب قهوتك الآن ☕</h2>
-                    <p class="text-gray-500 font-medium text-lg">يرجى تعبئة التفاصيل وسنقوم بتحويل طلبك فوراً لمسؤول المبيعات عبر واتساب.</p>
+                    <h2 class="text-4xl md:text-5xl font-heading font-black text-coffeeDark mb-4" data-i18n="order_title">اطلب قهوتك الآن ☕</h2>
+                    <p class="text-gray-500 font-medium text-lg" data-i18n="order_subtitle">يرجى تعبئة التفاصيل وسنقوم بتحويل طلبك فوراً لمسؤول المبيعات عبر واتساب.</p>
                 </div>
 
                 <!-- Form -->
                 <form id="whatsappForm" class="space-y-8 text-right">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
-                            <label for="clientName" class="block text-sm font-bold text-coffeeDark mb-3 pr-2">الاسم الكامل</label>
+                            <label for="clientName" class="block text-sm font-bold text-coffeeDark mb-3 pr-2" data-i18n="form_name">الاسم الكامل</label>
                             <input type="text" id="clientName" required class="w-full bg-latte/50 border-2 border-transparent rounded-2xl px-6 py-4 focus:outline-none focus:border-gold focus:bg-white transition-all text-lg" placeholder="مثال: أحمد محمد">
                         </div>
                         <div>
-                            <label for="clientPhone" class="block text-sm font-bold text-coffeeDark mb-3 pr-2">رقم الهاتف للتواصل</label>
+                            <label for="clientPhone" class="block text-sm font-bold text-coffeeDark mb-3 pr-2" data-i18n="form_phone">رقم الهاتف للتواصل</label>
                             <input type="tel" id="clientPhone" required class="w-full bg-latte/50 border-2 border-transparent rounded-2xl px-6 py-4 focus:outline-none focus:border-gold focus:bg-white transition-all text-lg text-left" dir="ltr" placeholder="05xx xxx xxx">
                         </div>
                     </div>
 
                     <div>
-                        <label for="clientAddress" class="block text-sm font-bold text-coffeeDark mb-3 pr-2">العنوان الكامل (للتوصيل)</label>
+                        <label for="clientAddress" class="block text-sm font-bold text-coffeeDark mb-3 pr-2" data-i18n="form_address">العنوان الكامل (للتوصيل)</label>
                         <input type="text" id="clientAddress" required class="w-full bg-latte/50 border-2 border-transparent rounded-2xl px-6 py-4 focus:outline-none focus:border-gold focus:bg-white transition-all text-lg" placeholder="المدينة، الحي، الشارع، رقم المبنى">
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
-                            <label for="orderType" class="block text-sm font-bold text-coffeeDark mb-3 pr-2">نوع الطلبية</label>
+                            <label for="orderType" class="block text-sm font-bold text-coffeeDark mb-3 pr-2" data-i18n="form_type">نوع الطلبية</label>
                             <select id="orderType" class="w-full bg-latte/50 border-2 border-transparent rounded-2xl px-6 py-4 focus:outline-none focus:border-gold focus:bg-white transition-all text-lg appearance-none">
-                                <option value="بن - تحميص فاتح">قهوة - تحميص فاتح (Light)</option>
-                                <option value="بن - تحميص متوسط">قهوة - تحميص متوسط (Medium)</option>
-                                <option value="بن - تحميص داكن">قهوة - تحميص داكن (Dark)</option>
-                                <option value="آلة إسبريسو">معدات - آلة إسبريسو</option>
-                                <option value="مطحنة قهوة">معدات - مطحنة قهوة</option>
+                                <option value="بن - تحميص فاتح" data-i18n="opt_light">قهوة - تحميص فاتح (Light)</option>
+                                <option value="بن - تحميص متوسط" data-i18n="opt_medium">قهوة - تحميص متوسط (Medium)</option>
+                                <option value="بن - تحميص داكن" data-i18n="opt_dark">قهوة - تحميص داكن (Dark)</option>
+                                <option value="آلة إسبريسو" data-i18n="opt_espresso">معدات - آلة إسبريسو</option>
+                                <option value="مطحنة قهوة" data-i18n="opt_grinder">معدات - مطحنة قهوة</option>
                             </select>
                         </div>
                         <div>
-                            <label for="orderQty" class="block text-sm font-bold text-coffeeDark mb-3 pr-2">الكمية</label>
+                            <label for="orderQty" class="block text-sm font-bold text-coffeeDark mb-3 pr-2" data-i18n="form_qty">الكمية</label>
                             <input type="number" id="orderQty" required min="1" value="1" class="w-full bg-latte/50 border-2 border-transparent rounded-2xl px-6 py-4 focus:outline-none focus:border-gold focus:bg-white transition-all text-lg">
                         </div>
                     </div>
 
                     <button type="submit" class="w-full bg-green-600 text-white font-heading font-black text-2xl py-5 rounded-2xl hover:bg-green-500 transition-all shadow-2xl shadow-green-900/40 flex items-center justify-center gap-4 hover-lift border-2 border-transparent hover:border-white">
-                        <i class="fa-brands fa-whatsapp text-4xl"></i> إرسال الطلب عبر واتساب
+                        <i class="fa-brands fa-whatsapp text-4xl"></i> <span data-i18n="form_submit">إرسال الطلب عبر واتساب</span>
                     </button>
-                    <p class="text-center text-sm text-gray-400">ستفتح المحادثة في تطبيق واتساب مع رسالة الطلب جاهزة للإرسال.</p>
+                    <p class="text-center text-sm text-gray-400" data-i18n="form_hint">ستفتح المحادثة في تطبيق واتساب مع رسالة الطلب جاهزة للإرسال.</p>
                 </form>
             </div>
         </div>
@@ -310,24 +320,24 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="font-heading font-black text-2xl text-gold tracking-wide">WINTOP <span class="text-white">COFFEE</span></span>
-                        <span class="text-xs text-gray-500 uppercase tracking-widest">Roastery & Specialty Coffee</span>
+                        <span class="text-xs text-gray-500 uppercase tracking-widest" data-i18n="footer_tagline">Roastery & Specialty Coffee</span>
                     </div>
                 </div>
 
                 <!-- Social Links -->
                 <div class="flex gap-6 reveal">
-                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gold hover:bg-gold hover:text-coffeeDark transition-all duration-300 hover:-translate-y-2"><i class="fa-brands fa-facebook-f text-xl"></i></a>
-                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gold hover:bg-gold hover:text-coffeeDark transition-all duration-300 hover:-translate-y-2"><i class="fa-brands fa-instagram text-xl"></i></a>
-                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gold hover:bg-gold hover:text-coffeeDark transition-all duration-300 hover:-translate-y-2"><i class="fa-brands fa-tiktok text-xl"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gold hover:bg-gold hover:text-coffeeDark transition-all duration-300 hover:-translate-y-2"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gold hover:bg-gold hover:text-coffeeDark transition-all duration-300 hover:-translate-y-2"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gold hover:bg-gold hover:text-coffeeDark transition-all duration-300 hover:-translate-y-2"><i class="fa-brands fa-tiktok text-xl"></i></a>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center md:text-right border-t border-white/10 pt-10">
                 <p class="text-gray-400 font-medium">
-                    &copy; <span class="current-year"></span> WINTOP COFFEE. جميع الحقوق محفوظة.
+                    &copy; <span class="current-year"></span> WINTOP COFFEE. <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span>
                 </p>
                 <p class="text-gray-400 font-medium md:text-left">
-                    تصميم وتطوير <span class="text-gold font-bold">عمر الفاروق</span>
+                    <span data-i18n="footer_dev">تصميم وتطوير</span> <span class="text-gold font-bold" data-i18n="dev_name">عمر الفاروق</span>
                 </p>
             </div>
         </div>
